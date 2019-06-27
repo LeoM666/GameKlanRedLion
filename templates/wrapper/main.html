@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Игровой клан - Красный лев</title>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'wrapper/img/logoLion.svg' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'wrapper/css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wrapper/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wrapper/css/media.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'wrapper/css/stylesheet.css' %}" type="text/css">
+</head>
+
+<body>
+<div id="blur"></div>
+
+{% for i in round_table %}
+<div class="blocks" id="round_table" style="background-image: url({{ i.image_room.url }}); ">
+    <a href="http://127.0.0.1:8000/">
+        <img src="{% static 'wrapper/img/scrolls.png' %}"/>
+        <div id="shadow">
+            <p>{{ i.about_room }}</p>
+        </div>
+        <p id="round_table">{{ i.name_room }}</p>
+    </a>
+    <input type="image" src="{% static 'wrapper/img/eye_on.png' %}" id="eye_on">
+    <input type="image" src="{% static 'wrapper/img/eye_off.png' %}" id="eye_off">
+</div>
+
+{% endfor %}
+
+{% for i in main_hall %}
+<div class="blocks" id="main_hall" style="background-image: url({{ i.image_room.url }}); ">
+    <a href="http://127.0.0.1:8000/">
+        <img src="{% static 'wrapper/img/scrolls.png' %}"/>
+        <div id="shadow">
+            <p>{{ i.about_room }}</p>
+        </div>
+        <p id="main_hall">{{ i.name_room }}</p>
+    </a>
+
+    <input type="image" src="{% static 'wrapper/img/eye_on.png' %}" id="eye_on">
+    <input type="image" src="{% static 'wrapper/img/eye_off.png' %}" id="eye_off">
+</div>
+{% endfor %}
+
+{% for i in battlefield %}
+<div class="blocks" id="battle_field" style="background-image: url({{ i.image_room.url }})">
+    <a href="http://127.0.0.1:8000/">
+        <img src="{% static 'wrapper/img/scrolls.png' %}"/>
+        <div id="shadow">
+            <p>{{ i.about_room }}</p>
+        </div>
+        <p id="battle_field">{{ i.name_room }}</p>
+    </a>
+    <input type="image" src="{% static 'wrapper/img/eye_on.png' %}" id="eye_on">
+    <input type="image" src="{% static 'wrapper/img/eye_off.png' %}" id="eye_off">
+</div>
+{% endfor %}
+
+{% for i in library %}
+<div class="blocks" id="library_room" style="background-image: url({{ i.image_room.url }})">
+    <a href="http://127.0.0.1:8000/">
+        <img src="{% static 'wrapper/img/scrolls.png' %}"/>
+        <div id="shadow">
+            <p>{{ i.about_room }}</p>
+        </div>
+        <p id="library_room">{{ i.name_room }}</p>
+    </a>
+    <input type="image" src="{% static 'wrapper/img/eye_on.png' %}" id="eye_on">
+    <input type="image" src="{% static 'wrapper/img/eye_off.png' %}" id="eye_off">
+</div>
+{% endfor %}
+
+
+{% for i in pool_of_memory %}
+<div class="blocks" id="pool_of_memory" style="background-image: url({{ i.image_room.url }})">
+    <a href="http://127.0.0.1:8000/">
+        <img src="{% static 'wrapper/img/scrolls.png' %}"/>
+        <div id="shadow">
+            <p>{{ i.about_room }}</p>
+        </div>
+        <p id="library_room">{{ i.name_room }}</p>
+    </a>
+    <input type="image" src="{% static 'wrapper/img/eye_on.png' %}" id="eye_on">
+    <input type="image" src="{% static 'wrapper/img/eye_off.png' %}" id="eye_off">
+</div>
+{% endfor %}
+
+{% for i in dungeon %}
+<div class="blocks" id="dungeon" style="background-image: url({{ i.image_room.url }})">
+    <a href="http://127.0.0.1:8000/">
+        <img src="{% static 'wrapper/img/scrolls.png' %}"/>
+        <div id="shadow">
+            <p>{{ i.about_room }}</p>
+        </div>
+        <p id="dungeon">{{ i.name_room }}</p>
+    </a>
+    <input type="image" src="{% static 'wrapper/img/eye_on.png' %}" id="eye_on">
+    <input type="image" src="{% static 'wrapper/img/eye_off.png' %}" id="eye_off">
+</div>
+{% endfor %}
+
+<img src="{% static 'wrapper/img/logoLion.svg' %}" class="logo">
+
+<script src="{% static 'wrapper/js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'wrapper/js/scripts.js' %}"></script>
+</body>
+</html>

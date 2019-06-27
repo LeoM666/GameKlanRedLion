@@ -1,0 +1,125 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+    #blur{
+        background: #0a1f3b;
+        height: 170vh;
+    }
+
+    .blocks{
+        width: 70%;
+        height: 30%;
+        margin: 0 5% 5% 0;
+        top: 15%;
+        left: 16%;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-device-width : 321px) and (orientation : landscape){
+
+    .blocks{
+        width: 25%;
+        height: 30%;
+        margin: 0 5% 5% 0;
+        top: 15%;
+        left: 7%;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-device-width : 500px) and (orientation : portrait){
+    #blur{
+        background: #0a1f3b;
+        height: 170vh;
+    }
+
+    .blocks{
+        width: 70%;
+        height: 20%;
+        margin: 0 5% 5% 0;
+        top: 10%;
+        left: 15%;
+    }
+
+    .logo{
+        top: 149%;
+        width: 22%;
+        left: 40%;
+    }
+
+    .blocks p{
+        font-size: 1.3em;
+    }
+
+    #shadow p{
+        font-size: 1.2em;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+
+    .blocks{
+        width: 35%;
+        height: 20%;
+        top: 12%;
+        left: 14%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 500px) and (max-device-width : 1024px) and (orientation : portrait){
+
+    #blur{
+        height: 210vh;
+    }
+
+    .blocks{
+        width: 70%;
+        height: 25%;
+        top: 20%;
+        left: 15%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+
+@media (min-width: 801px) and (max-width: 1023px){
+    .blocks{
+        width: 35%;
+        height: 20%;
+        top: 12%;
+        left: 14%;
+    }
+}
+
+@media only screen and (min-width : 1224px) {
+    .blocks{
+        width: 25%;
+        height: 25%;
+        top: 20%;
+        left: 10%;
+    }
+
+    #eye_on{
+        display: none;
+    }
+
+    .blocks a{
+        display: none;
+    }
+
+}
+
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+    .blocks{
+        width: 25%;
+        height: 23%;
+        top: 25%;
+        left: 7%;
+    }
+}
