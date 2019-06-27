@@ -15,6 +15,7 @@
 
 <body>
 <div id="blur"></div>
+<img src="{% static 'wrapper/img/menu.svg' %}" class="menu">
 
 {% for i in round_table %}
 <div class="blocks" id="round_table" style="background-image: url({{ i.image_room.url }}); ">

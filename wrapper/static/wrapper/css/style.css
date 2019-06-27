@@ -103,3 +103,10 @@ body{
     top: 80%;
     width: 7%;
 }
+
+.menu{
+    position: absolute;
+    left: 0.9%;
+    width: 5%;
+    top: 5%;
+}
