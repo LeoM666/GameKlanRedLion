@@ -19,7 +19,7 @@
 
 {% for i in round_table %}
 <div class="blocks" id="round_table" style="background-image: url({{ i.image_room.url }}); ">
-    <a href="http://127.0.0.1:8000/">
+    <a href="/roundtable">
         <img src="{% static 'wrapper/img/scrolls.png' %}"/>
         <div id="shadow">
             <p>{{ i.about_room }}</p>
