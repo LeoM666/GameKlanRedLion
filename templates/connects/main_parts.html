@@ -1,8 +1,12 @@
 {% extends "overall/wrapper.html" %}
 
+{% block title %}
+<title>{{prTitle}} - Игровой клан Красный Лев</title>
+{% endblock title %}
+
 {% block content %}
 {% for i in data %}
-<h1>{{ i.name_room }}</h1>
+<h1>{{ i.name_room }}}</h1>
 {% endfor %}
 {% endblock content %}
 
