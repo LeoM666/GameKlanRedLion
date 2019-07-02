@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'mr_ardaghgbold';
+    src: url('../font/15399-webfont.woff2') format('woff2'),
+         url('../font/15399-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fleischmann_gotischcregular';
+    src: url('../font/11966-webfont.woff2') format('woff2'),
+         url('../font/11966-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}

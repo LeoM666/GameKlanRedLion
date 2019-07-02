@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    {% block title %}
+    {% endblock title %}
+
+    <link rel="shortcut icon" href="{% static 'union/img/logoLion.svg' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'union/css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'union/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'union/css/media.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'union/css/stylesheet.css' %}" type="text/css">
+</head>
+
+<body>
+
+   <img src="{% static 'union/img/scrolls.png' %}" class = "scrolls"/>
+    {% for dat in data %}
+    <p id="name">{{ dat.name_room }}</p>
+    <div class="blackQuar">
+        <p>{{ dat.about_room }}</p>
+    </div>
+    <div id="preview" style="background-image: url({{ dat.image_room.url }});"></div>
+    {% endfor %}
+    
+    <div class="nav"></div>
+
+</body>
+</html>

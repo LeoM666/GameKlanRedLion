@@ -103,3 +103,13 @@ body{
     top: 80%;
     width: 7%;
 }
+
+.menu{
+    position: absolute;
+    left: 0.9%;
+    width: 4%;
+    top: 3%;
+    cursor: pointer;
+}
+
+

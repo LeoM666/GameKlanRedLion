@@ -24,7 +24,7 @@ SECRET_KEY = 'mc!pjzw+&f&fqd45njmf-y)z2k_i(fzk+k%aau(71x6)rf!vr%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '7342e044.ngrok.io']
 
 # Application definition
 
@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'wrapper.apps.WrapperConfig'
+    'wrapper.apps.WrapperConfig',
+    'union.apps.UnionConfig'
 ]
 
 MIDDLEWARE = [
@@ -59,8 +60,7 @@ ROOT_URLCONF = 'GameKlanRed.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,5 +130,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '/home/leomaxwell/GameKlanRed_env/GameKlanRe
 MEDIA_URL = '/media/'
 
 STATIC_DIRS = (
-    os.path.join(BASE_DIR, '/home/leomaxwell/GameKlanRed_env/GameKlanRed/wrapper/static')
+    os.path.join(BASE_DIR, '/home/leomaxwell/GameKlanRed_env/GameKlanRed/wrapper/static'),
+    os.path.join(BASE_DIR, '/home/leomaxwell/GameKlanRed_env/GameKlanRed/union/static')
 )
