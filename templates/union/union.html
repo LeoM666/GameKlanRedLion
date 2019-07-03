@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    {% block title %}
+    {% endblock title %}
+
+    <link rel="shortcut icon" href="{% static 'union/img/logoLion.svg' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'union/css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'union/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'union/css/media.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'union/css/stylesheet.css' %}" type="text/css">
+</head>
+
+<body>
+
+   <img src="{% static 'union/img/scrolls.png' %}" class = "scrolls"/>
+
+    {% for dat in data %}
+    <p id="name">{{ dat.name_room }}</p>
+    <div class="blackQuar">
+        <p>{{ dat.about_room }}</p>
+    </div>
+    <div id="preview" style="background-image: url({{ dat.image_room.url }});"></div>
+    {% endfor %}
+    
+    <div class="contLogo">
+        <img src="{% static 'union/img/logoLion.svg' %}" class="logo"/>
+    </div>
+
+    {% for foo in data %}
+
+    <ul class="nav">
+        <ul class="navOne">
+            <li>
+                {% if foo.id_room == 1 %}
+                    <img src="{% static 'union/img/door_active.png' %}"/>
+                    <p>{{ foo.name_room }}</p>
+                {% else %}
+                    <img src="{% static 'union/img/door_passive.png' %}"/>
+                    {% for table in round_table %}
+                        <p>{{ table.name_room }}</p>
+                    {% endfor %}
+                {% endif %}
+            </li>
+
+            <li>
+                {% if foo.id_room == 2 %}
+                    <img src="{% static 'union/img/door_active.png' %}"/>
+                    <p>{{ foo.name_room }}</p>
+                {% else %}
+                    <img src="{% static 'union/img/door_passive.png' %}"/>
+                    {% for main in main_hall %}
+                        <p>{{ main.name_room }}</p>
+                    {% endfor %}
+                {% endif %}
+
+            </li>
+
+            <li>
+                {% if foo.id_room == 3 %}
+                    <img src="{% static 'union/img/door_active.png' %}"/>
+                    <p>{{ foo.name_room }}</p>
+                {% else %}
+                    <img src="{% static 'union/img/door_passive.png' %}"/>
+                    {% for battle in battlefield %}
+                        <p>{{ battle.name_room }}</p>
+                    {% endfor %}
+                {% endif %}
+            </li>
+
+        </ul>
+
+        <ul class="navFour">
+
+            <li>
+                {% if foo.id_room == 4 %}
+                    <img src="{% static 'union/img/door_active.png' %}"/>
+                    <p>{{ foo.name_room }}</p>
+                {% else %}
+                    <img src="{% static 'union/img/door_passive.png' %}"/>
+                    {% for lib in library %}
+                        <p>{{ lib.name_room }}</p>
+                    {% endfor %}
+                {% endif %}
+            </li>
+
+            <li>
+                {% if foo.id_room == 5 %}
+                    <img src="{% static 'union/img/door_active.png' %}"/>
+                    <p>{{ foo.name_room }}</p>
+                {% else %}
+                    <img src="{% static 'union/img/door_passive.png' %}"/>
+                    {% for pool in pool_of_memory %}
+                        <p>{{ pool.name_room }}</p>
+                    {% endfor %}
+                {% endif %}
+            </li>
+
+            <li>
+                {% if foo.id_room == 6 %}
+                    <img src="{% static 'union/img/door_active.png' %}"/>
+                    <p>{{ foo.name_room }}</p>
+                {% else %}
+                    <img src="{% static 'union/img/door_passive.png' %}"/>
+                    {% for dungeon in dungeon %}
+                        <p>{{ dungeon.name_room }}</p>
+                    {% endfor %}
+                {% endif %}
+            </li>
+
+        </ul>
+    </ul>
+
+   {% endfor %}
+    
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import "media.css";
+@import "stylesheet.css";
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+#preview{
+    width: 100%;
+    height: 31%;
+    background-color: #848484;
+    background-size: cover;
+    background-position: center;
+}
+
+.scrolls{
+    position: absolute;
+    top: 10%;
+    left: -10%;
+}
+
+#name{
+    position: absolute;
+    font-family: 'fleischmann_gotischcregular';
+    font-size: 2em;
+    color: #800000;
+    top: 13%;
+    left: 4%;
+    cursor: default;
+}
+
+.blackQuar{
+    background-color: #000000;
+    opacity: 0.77;
+    position: absolute;
+    width: 45%;
+    height: 20%;
+    top: 5%;
+    right: -5%;
+}
+
+.blackQuar p{
+    position: absolute;
+    top: 35%;
+    font-family: 'mr_ArdaghG';
+    color: #ff4e00;
+    font-size: 2em;
+    left: 30%;
+    cursor: default;
+}
+
+.nav{
+    position: relative;
+    background-color: #232323;
+    width: 57%;
+    height: 21%;
+    left: 22%;
+    top: -6%;
+    border-radius: 30px;
+    z-index: -2;
+}
+
+
+.contLogo{
+    position: absolute;
+    background-color: #232323;
+    width: 10%;
+    height: 30%;
+    z-index: -1;
+    top: 17%;
+    left: 45%;
+    border-radius: 30%;
+}
+
+.contLogo .logo{
+    position: relative;
+    top: 48%;
+    width: 50%;
+    left: 25%;
+}
+
+.nav .navOne{
+    list-style-type: none;
+    padding-top: 6%;
+    padding-left: 7%;
+    margin: 0;
+}
+
+.nav .navOne li{
+    float: left;
+    padding-left: -1%;
+}
+
+.nav .navOne li img{
+    width: 65%;
+}
+
+
+.nav .navFour{
+    list-style-type: none;
+    padding-top: 6%;
+    padding-left: 14.5%;
+    margin: 0;
+}
+
+.nav .navFour li{
+    float: right;
+    padding-left: -1%;
+}
+
+.nav .navFour li img{
+    width: 65%;
+}
