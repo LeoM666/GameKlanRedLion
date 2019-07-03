@@ -1,3 +1,25 @@
 from django.shortcuts import render
 
-# Create your views here.
+from Dungeon.models import AboutDungeon
+from Library.models import AboutLibrary
+from MainHall.models import AboutMainHall
+from PoolOfMemory.models import AboutPoolOfMemory
+from RoundTable.models import AboutRoundTable
+from .models import AboutBattleField
+
+
+def battlefield(request):
+    my_data = AboutBattleField.objects.all()
+    content_round_table = AboutRoundTable.objects.all()
+    content_dungeon = AboutDungeon.objects.all()
+    content_pool_of_memory = AboutPoolOfMemory.objects.all()
+    content_library = AboutLibrary.objects.all()
+    content_main_hall = AboutMainHall.objects.all()
+    contaxt = {"prTitle": "Поле боя",
+               "data": my_data,
+               "round_table": content_round_table,
+               "dungeon": content_dungeon,
+               "pool_of_memory": content_pool_of_memory,
+               "library": content_library,
+               "main_hall": content_main_hall}
+    return render(request, "connects/battlefield_parts.html", contaxt)

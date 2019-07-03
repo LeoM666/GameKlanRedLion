@@ -39,10 +39,12 @@
                     <img src="{% static 'union/img/door_active.png' %}"/>
                     <p>{{ foo.name_room }}</p>
                 {% else %}
-                    <img src="{% static 'union/img/door_passive.png' %}"/>
-                    {% for table in round_table %}
-                        <p>{{ table.name_room }}</p>
-                    {% endfor %}
+                    <a href="roundtable/">
+                        <img src="{% static 'union/img/door_passive.png' %}"/>
+                        {% for table in round_table %}
+                            <p>{{ table.name_room }}</p>
+                        {% endfor %}
+                    </a>
                 {% endif %}
             </li>
 
@@ -51,10 +53,12 @@
                     <img src="{% static 'union/img/door_active.png' %}"/>
                     <p>{{ foo.name_room }}</p>
                 {% else %}
-                    <img src="{% static 'union/img/door_passive.png' %}"/>
-                    {% for main in main_hall %}
-                        <p>{{ main.name_room }}</p>
-                    {% endfor %}
+                    <a href="mainhall/">
+                        <img src="{% static 'union/img/door_passive.png' %}"/>
+                        {% for main in main_hall %}
+                            <p>{{ main.name_room }}</p>
+                        {% endfor %}
+                    </a>
                 {% endif %}
 
             </li>
@@ -64,10 +68,12 @@
                     <img src="{% static 'union/img/door_active.png' %}"/>
                     <p>{{ foo.name_room }}</p>
                 {% else %}
-                    <img src="{% static 'union/img/door_passive.png' %}"/>
-                    {% for battle in battlefield %}
-                        <p>{{ battle.name_room }}</p>
-                    {% endfor %}
+                    <a href="battlefield/">
+                        <img src="{% static 'union/img/door_passive.png' %}"/>
+                        {% for battle in battlefield %}
+                            <p>{{ battle.name_room }}</p>
+                        {% endfor %}
+                    </a>
                 {% endif %}
             </li>
 
@@ -80,10 +86,12 @@
                     <img src="{% static 'union/img/door_active.png' %}"/>
                     <p>{{ foo.name_room }}</p>
                 {% else %}
-                    <img src="{% static 'union/img/door_passive.png' %}"/>
-                    {% for lib in library %}
-                        <p>{{ lib.name_room }}</p>
-                    {% endfor %}
+                    <a href="librery/">
+                        <img src="{% static 'union/img/door_passive.png' %}"/>
+                        {% for lib in library %}
+                            <p>{{ lib.name_room }}</p>
+                        {% endfor %}
+                    </a>
                 {% endif %}
             </li>
 
@@ -92,10 +100,12 @@
                     <img src="{% static 'union/img/door_active.png' %}"/>
                     <p>{{ foo.name_room }}</p>
                 {% else %}
-                    <img src="{% static 'union/img/door_passive.png' %}"/>
-                    {% for pool in pool_of_memory %}
-                        <p>{{ pool.name_room }}</p>
-                    {% endfor %}
+                    <a href="poolmemory/">
+                        <img src="{% static 'union/img/door_passive.png' %}"/>
+                        {% for pool in pool_of_memory %}
+                            <p>{{ pool.name_room }}</p>
+                        {% endfor %}
+                    </a>
                 {% endif %}
             </li>
 
@@ -104,10 +114,12 @@
                     <img src="{% static 'union/img/door_active.png' %}"/>
                     <p>{{ foo.name_room }}</p>
                 {% else %}
-                    <img src="{% static 'union/img/door_passive.png' %}"/>
-                    {% for dungeon in dungeon %}
-                        <p>{{ dungeon.name_room }}</p>
-                    {% endfor %}
+                    <a href="dungeon/">
+                        <img src="{% static 'union/img/door_passive.png' %}"/>
+                        {% for dungeon in dungeon %}
+                            <p>{{ dungeon.name_room }}</p>
+                        {% endfor %}
+                    </a>
                 {% endif %}
             </li>
 

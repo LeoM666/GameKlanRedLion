@@ -12,6 +12,7 @@ body{
     height: 100%;
     display: block;
     position: absolute;
+    z-index: -3;
 }
 
 #preview{
@@ -91,13 +92,12 @@ body{
 .nav .navOne{
     list-style-type: none;
     padding-top: 6%;
-    padding-left: 7%;
+    padding-left: 8%;
     margin: 0;
 }
 
 .nav .navOne li{
     float: left;
-    padding-left: -1%;
 }
 
 .nav .navOne li img{
@@ -119,4 +119,39 @@ body{
 
 .nav .navFour li img{
     width: 65%;
+}
+
+.nav .navOne li p{
+    text-align: left;
+    font-family: 'mr_ArdaghG';
+    font-size: 1em;
+    color: #27b81c;
+}
+
+.nav .navOne li:nth-child(3) p{
+    padding-left: 8%;
+}
+
+.nav .navFour li p{
+    text-align: left;
+    font-family: 'mr_ArdaghG';
+    font-size: 1em;
+    color: #27b81c;
+}
+
+.nav ul a{
+    border: none;
+    text-decoration: none;
+}
+.nav ul a:hover{
+    border: none;
+    text-decoration: none;
+}
+.nav ul a:visited{
+    border: none;
+    text-decoration: none;
+}
+.nav ul a:active{
+    border: none;
+    text-decoration: none;
 }
