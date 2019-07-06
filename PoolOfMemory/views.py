@@ -21,5 +21,6 @@ def poolofmemory(request):
                "dungeon": content_dungeon,
                "round_table": content_round_table,
                "library": content_library,
-               "main_hall": content_main_hall}
+               "main_hall": content_main_hall,
+               "this_path": request.get_full_path()}
     return render(request, "connects/poolofmemory_parts.html", contaxt)

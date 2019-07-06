@@ -27,7 +27,9 @@
     {% endfor %}
 
     <div class="contLogo">
-        <img src="{% static 'union/img/logoLion.svg' %}" class="logo"/>
+        <a href="{% url 'wrapper' %}">
+            <img src="{% static 'union/img/logoLion.svg' %}" class="logo"/>
+        </a>
     </div>
 
     {% for foo in data %}
@@ -36,10 +38,12 @@
         <ul class="navOne">
             <li>
                 {% if foo.id_room == 1 %}
-                    <img src="{% static 'union/img/door_active.png' %}"/>
-                    <p>{{ foo.name_room }}</p>
+                    <a href="{{ foo.this_path }}">
+                        <img src="{% static 'union/img/door_active.png' %}"/>
+                        <p>{{ foo.name_room }}</p>
+                    </a>
                 {% else %}
-                    <a href="roundtable/">
+                    <a href="{% url 'roundTable' %}">
                         <img src="{% static 'union/img/door_passive.png' %}"/>
                         {% for table in round_table %}
                             <p>{{ table.name_room }}</p>
@@ -50,10 +54,12 @@
 
             <li>
                 {% if foo.id_room == 2 %}
-                    <img src="{% static 'union/img/door_active.png' %}"/>
-                    <p>{{ foo.name_room }}</p>
+                    <a href="{{ foo.this_path }}">
+                        <img src="{% static 'union/img/door_active.png' %}"/>
+                        <p>{{ foo.name_room }}</p>
+                    </a>
                 {% else %}
-                    <a href="mainhall/">
+                    <a href="{% url 'MainHall' %}">
                         <img src="{% static 'union/img/door_passive.png' %}"/>
                         {% for main in main_hall %}
                             <p>{{ main.name_room }}</p>
@@ -65,10 +71,12 @@
 
             <li>
                 {% if foo.id_room == 3 %}
-                    <img src="{% static 'union/img/door_active.png' %}"/>
-                    <p>{{ foo.name_room }}</p>
+                    <a href="{{ foo.this_path }}">
+                        <img src="{% static 'union/img/door_active.png' %}"/>
+                        <p>{{ foo.name_room }}</p>
+                    </a>
                 {% else %}
-                    <a href="battlefield/">
+                    <a href="{% url 'battleField' %}">
                         <img src="{% static 'union/img/door_passive.png' %}"/>
                         {% for battle in battlefield %}
                             <p>{{ battle.name_room }}</p>
@@ -83,10 +91,12 @@
 
             <li>
                 {% if foo.id_room == 4 %}
-                    <img src="{% static 'union/img/door_active.png' %}"/>
-                    <p>{{ foo.name_room }}</p>
+                    <a href="{{ foo.this_path }}">
+                        <img src="{% static 'union/img/door_active.png' %}"/>
+                        <p>{{ foo.name_room }}</p>
+                    </a>
                 {% else %}
-                    <a href="librery/">
+                    <a href="{% url 'Library' %}">
                         <img src="{% static 'union/img/door_passive.png' %}"/>
                         {% for lib in library %}
                             <p>{{ lib.name_room }}</p>
@@ -97,10 +107,12 @@
 
             <li>
                 {% if foo.id_room == 5 %}
-                    <img src="{% static 'union/img/door_active.png' %}"/>
-                    <p>{{ foo.name_room }}</p>
+                    <a href="{{ foo.this_path }}">
+                        <img src="{% static 'union/img/door_active.png' %}"/>
+                        <p>{{ foo.name_room }}</p>
+                    </a>
                 {% else %}
-                    <a href="poolmemory/">
+                    <a href="{% url 'PoolOfMemory' %}">
                         <img src="{% static 'union/img/door_passive.png' %}"/>
                         {% for pool in pool_of_memory %}
                             <p>{{ pool.name_room }}</p>
@@ -111,10 +123,12 @@
 
             <li>
                 {% if foo.id_room == 6 %}
-                    <img src="{% static 'union/img/door_active.png' %}"/>
-                    <p>{{ foo.name_room }}</p>
+                    <a href="{{ foo.this_path }}">
+                        <img src="{% static 'union/img/door_active.png' %}"/>
+                        <p>{{ foo.name_room }}</p>
+                    </a>
                 {% else %}
-                    <a href="dungeon/">
+                    <a href="{% url 'Dungeon' %}">
                         <img src="{% static 'union/img/door_passive.png' %}"/>
                         {% for dungeon in dungeon %}
                             <p>{{ dungeon.name_room }}</p>

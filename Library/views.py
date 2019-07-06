@@ -20,6 +20,7 @@ def library(request):
                "battlefield": content_battlefield,
                "dungeon": content_dungeon,
                "pool_of_memory": content_pool_of_memory,
-               "content_round_table": content_round_table,
-               "main_hall": content_main_hall}
+               "round_table": content_round_table,
+               "main_hall": content_main_hall,
+               "this_path": request.get_full_path()}
     return render(request, "connects/library_parts.html", contaxt)

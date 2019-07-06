@@ -21,5 +21,6 @@ def mainhall(request):
                "dungeon": content_dungeon,
                "pool_of_memory": content_pool_of_memory,
                "library": content_library,
-               "round_table": content_round_table}
+               "round_table": content_round_table,
+               "this_path": request.get_full_path()}
     return render(request, "connects/main_parts.html", contaxt)

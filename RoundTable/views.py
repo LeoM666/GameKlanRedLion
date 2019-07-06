@@ -21,5 +21,6 @@ def roundTable(request):
                "dungeon": content_dungeon,
                "pool_of_memory": content_pool_of_memory,
                "library": content_library,
-               "main_hall": content_main_hall}
+               "main_hall": content_main_hall,
+               "this_path": request.get_full_path()}
     return render(request, "connects/round_parts.html", contaxt)
