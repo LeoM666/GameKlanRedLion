@@ -14,8 +14,21 @@
 </head>
 
 <body>
-<div id="blur"></div>
 <img src="{% static 'wrapper/img/menu.svg' %}" class="menu">
+
+<div class="menuActive">
+    <div class="menuBlock">
+        <ul>
+            <li>Первый блок</li>
+            <li>Первый блок</li>
+            <li>Первый блок</li>
+            <li>Первый блок</li>
+        </ul>
+    </div>
+    <div class="menuOut"></div>
+</div>
+
+<div id="blur"></div>
 
 {% for i in round_table %}
 <div class="blocks" id="round_table" style="background-image: url({{ i.image_room.url }}); ">
@@ -106,7 +119,10 @@
 
 <img src="{% static 'wrapper/img/logoLion.svg' %}" class="logo">
 
+
+
 <script src="{% static 'wrapper/js/jquery-3.4.1.min.js' %}"></script>
 <script src="{% static 'wrapper/js/scripts.js' %}"></script>
+<script src="{% static 'wrapper/js/menu.js' %}"></script>
 </body>
 </html>
