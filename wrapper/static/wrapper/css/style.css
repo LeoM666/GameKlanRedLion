@@ -21,7 +21,6 @@ body{
     height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    z-index: -1;
     position: absolute;
 }
 
@@ -103,40 +102,4 @@ body{
     top: 80%;
     width: 7%;
     z-index: 3;
-}
-
-.menu{
-    position: absolute;
-    left: 0.9%;
-    width: 4%;
-    top: 3%;
-    cursor: pointer;
-}
-
-
-.menuActive {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-size: cover;
-    position: absolute;
-}
-
-.menuBlock {
-    height: 100%;
-    width: 25%;
-    background-color: #000000;
-    z-index: 2;
-    background-size: cover;
-    position: absolute;
-}
-
-.menuOut{
-    height: 100%;
-    width: 100%;
-    background-color: #000000;
-    z-index: 1;
-    background-size: cover;
-    position: absolute;
-    opacity: .5;
 }

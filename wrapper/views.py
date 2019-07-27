@@ -22,5 +22,6 @@ def wrapp(request):
         "library": content_library,
         "main_hall": content_main_hall,
         "round_table": content_round_table,
+        "this_path": request.get_full_path(),
     }
     return render(request, "wrapper/main.html", about_rooms)

@@ -24,7 +24,7 @@ SECRET_KEY = 'mc!pjzw+&f&fqd45njmf-y)z2k_i(fzk+k%aau(71x6)rf!vr%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'fe9b72f8.ngrok.io']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ffb89e16.ngrok.io']
 
 # Application definition
 
@@ -123,13 +123,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_ROOT = '/home/leomaxwell/GameKlanRed_env/GameKlanRed/staticfiles'
+STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, '/home/leomaxwell/GameKlanRed_env/GameKlanRed/media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
 
 STATIC_DIRS = (
-    os.path.join(BASE_DIR, '/home/leomaxwell/GameKlanRed_env/GameKlanRed/wrapper/static'),
-    os.path.join(BASE_DIR, '/home/leomaxwell/GameKlanRed_env/GameKlanRed/union/static')
+    os.path.join(BASE_DIR, 'wrapper/static'),
+    os.path.join(BASE_DIR, 'union/static'),
+    os.path.join(BASE_DIR, 'BattlleField/static')
 )

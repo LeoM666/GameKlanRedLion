@@ -9,6 +9,7 @@ from .models import AboutBattleField
 
 
 def battlefield(request):
+    id_room = 3
     my_data = AboutBattleField.objects.all()
     content_round_table = AboutRoundTable.objects.all()
     content_dungeon = AboutDungeon.objects.all()

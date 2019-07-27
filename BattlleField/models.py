@@ -11,3 +11,7 @@ class AboutBattleField(models.Model):
 
     def __str__(self):
         return self.name_room
+
+
+class BattleFieldContent(models.Model):
+    bg_room = models.ImageField(upload_to='battlefield_media')

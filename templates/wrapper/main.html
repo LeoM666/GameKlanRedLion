@@ -14,40 +14,27 @@
 </head>
 
 <body>
-<img src="{% static 'wrapper/img/menu.svg' %}" class="menu">
 
-<div class="menuActive">
-    <div class="menuBlock">
-        <ul>
-            <li>Первый блок</li>
-            <li>Первый блок</li>
-            <li>Первый блок</li>
-            <li>Первый блок</li>
-        </ul>
+<div id="blur">
+
+    {% for i in round_table %}
+    <div class="blocks" id="round_table" style="background-image: url({{ i.image_room.url }}); ">
+        <a href="/roundtable">
+            <img src="{% static 'wrapper/img/scrolls.png' %}"/>
+            <div id="shadow">
+                <p>{{ i.about_room }}</p>
+            </div>
+            <p id="round_table">{{ i.name_room }}</p>
+        </a>
+        <input type="image" src="{% static 'wrapper/img/eye_on.png' %}" id="eye_on">
+        <input type="image" src="{% static 'wrapper/img/eye_off.png' %}" id="eye_off">
     </div>
-    <div class="menuOut"></div>
-</div>
 
-<div id="blur"></div>
-
-{% for i in round_table %}
-<div class="blocks" id="round_table" style="background-image: url({{ i.image_room.url }}); ">
-    <a href="/roundtable">
-        <img src="{% static 'wrapper/img/scrolls.png' %}"/>
-        <div id="shadow">
-            <p>{{ i.about_room }}</p>
-        </div>
-        <p id="round_table">{{ i.name_room }}</p>
-    </a>
-    <input type="image" src="{% static 'wrapper/img/eye_on.png' %}" id="eye_on">
-    <input type="image" src="{% static 'wrapper/img/eye_off.png' %}" id="eye_off">
-</div>
-
-{% endfor %}
+    {% endfor %}
 
 {% for i in main_hall %}
 <div class="blocks" id="main_hall" style="background-image: url({{ i.image_room.url }}); ">
-    <a href="/mainhall">
+    <a href="mainhall/">
         <img src="{% static 'wrapper/img/scrolls.png' %}"/>
         <div id="shadow">
             <p>{{ i.about_room }}</p>
@@ -119,10 +106,8 @@
 
 <img src="{% static 'wrapper/img/logoLion.svg' %}" class="logo">
 
-
-
+</div>
 <script src="{% static 'wrapper/js/jquery-3.4.1.min.js' %}"></script>
 <script src="{% static 'wrapper/js/scripts.js' %}"></script>
-<script src="{% static 'wrapper/js/menu.js' %}"></script>
 </body>
 </html>
