@@ -19,6 +19,7 @@
             <link rel="stylesheet" href="{% static 'MainHall/css/style.css' %}" type="text/css">
         {% elif foo.id_room == 3 %}
             <link rel="stylesheet" href="{% static 'BattleField/css/style.css' %}" type="text/css">
+            <link rel="stylesheet" href="{% static 'BattleField/css/media.css' %}" type="text/css">
         {% elif foo.id_room == 4 %}
             <link rel="stylesheet" href="{% static 'Library/css/style.css' %}" type="text/css">
         {% elif foo.id_room == 5 %}
@@ -34,7 +35,7 @@
 {% for dat in data %}
 <p id="name">{{ dat.name_room }}</p>
 <div class="blackQuar">
-     <p>{{ dat.about_room }}</p>
+     <p id="inBlack">{{ dat.about_room }}</p>
 </div>
 <div id="preview" style="background-image: url({{ dat.image_room.url }});"></div>
 {% endfor %}
@@ -48,7 +49,7 @@
 
     {% for foo in data %}
 
-    <ul class="nav">
+    <div class="nav">
         <ul class="navOne">
             <li>
                 {% if foo.id_room == 1 %}
@@ -152,7 +153,7 @@
             </li>
 
         </ul>
-    </ul>
+    </div>
 
    {% endfor %}
 

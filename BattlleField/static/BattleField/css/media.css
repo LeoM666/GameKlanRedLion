@@ -1,0 +1,19 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+    #twitch-embed{
+        padding-top: 40%;
+    }
+}
+
+@media only screen and (min-width : 1224px) {
+    #twitch-embed{
+        padding-top: 23%;
+        padding-left: 16%;
+    }
+}
+
+@media only screen and (min-width : 1824px) {
+    #twitch-embed {
+        padding-top: 30%;
+        padding-left: 20%;
+    }
+}
