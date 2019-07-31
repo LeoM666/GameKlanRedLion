@@ -43,7 +43,7 @@
      }
 
      .contLogo .logo{
-         top: 50%;
+         top: 45%;
          width: 60%;
          left: 20%;
      }
@@ -99,7 +99,83 @@
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-device-width : 321px) and (orientation : landscape){}
+/*
+@media only screen and (min-device-width : 321px) and (orientation : landscape){
+    #preview{
+        height: 20%;
+    }
+
+    .scrolls {
+        width: 35%;
+        top: 3%;
+    }
+
+    #name{
+        font-size: 1.3em;
+        top: 5%;
+        left: 5%;
+    }
+
+    .blackQuar{
+        width: 40%;
+        height: 15%;
+        top: 3%;
+    }
+
+    .blackQuar p {
+         top: 20%;
+        font-size: 1.3em;
+    }
+
+    .nav{
+         width: 65%;
+         border-radius: 30%;
+         left: 17%;
+         right: 0;
+         top: 18%;
+         height: 17%;
+     }
+
+    .contLogo{
+        width: 9%;
+        top: 9%;
+    }
+
+    .contLogo .logo{
+         top: 41%;
+         width: 63%;
+         left: 20%;
+     }
+
+
+    .nav .navOne {
+         padding-left: 5%;
+         padding-top: 2.5%;
+         width: 50%;
+     }
+
+     .nav .navOne li {
+         margin-left: 2%;
+         padding-left: 0;
+         width: 31%;
+     }
+
+     .nav .navOne li img {
+         padding-left: 1%;
+         width: 50%;
+
+     }
+
+     .nav .navOne li p {
+         font-size: 0.6em
+     }
+
+     .nav .navOne li:nth-child(3) p{
+         padding-left: 4%;
+     }
+
+
+}*/
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-device-width : 500px) and (orientation : portrait){}

@@ -6,18 +6,9 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-#embed_youtube{
-    position: absolute;
-    top: 55%;
+#twitch-embed{
     padding-left: 20%;
-}
-
-#embed_chat{
-    position: absolute;
-    top: 55%;
-    left: 53%;
-    background-color: black;
+    padding-top: 10%;
 }
