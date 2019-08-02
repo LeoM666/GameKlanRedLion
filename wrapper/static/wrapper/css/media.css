@@ -6,11 +6,8 @@
     }
 
     .blocks{
-        width: 70%;
+        width: 100%;
         height: 30%;
-        margin: 0 5% 5% 0;
-        top: 15%;
-        left: 16%;
     }
 }
 
@@ -18,33 +15,26 @@
 @media only screen and (min-device-width : 321px) and (orientation : landscape){
 
     .blocks{
-        width: 25%;
+        width: 100%;
         height: 30%;
-        margin: 0 5% 5% 0;
-        top: 15%;
-        left: 7%;
     }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-device-width : 500px) and (orientation : portrait){
     #blur{
-        background: #0a1f3b;
-        height: 170vh;
+        background-color: #0a1f3b;
     }
 
     .blocks{
-        width: 70%;
-        height: 20%;
-        margin: 0 5% 5% 0;
         top: 10%;
-        left: 15%;
+        width: 100%;
+        height: 15%;
+        left: 0;
     }
 
     .logo{
-        top: 149%;
-        width: 22%;
-        left: 40%;
+       display: none;
     }
 
     .blocks p{
@@ -72,7 +62,7 @@
 @media only screen and (min-device-width : 500px) and (max-device-width : 1024px) and (orientation : portrait){
 
     #blur{
-        height: 210vh;
+        background-color: #0a1f3b;
     }
 
     .blocks{
@@ -121,5 +111,9 @@
         height: 23%;
         top: 25%;
         left: 7%;
+    }
+
+    .blocks p{
+        font-size: 2em;
     }
 }

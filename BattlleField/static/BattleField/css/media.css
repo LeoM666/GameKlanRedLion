@@ -1,0 +1,35 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+    #twitch-embed {
+        padding-left: 0;
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (max-device-width : 500px) and (orientation : portrait){
+     #twitch-embed {
+        padding-left: 3%;
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (min-device-width : 500px) and (max-device-width : 1024px) and (orientation : portrait){
+    #twitch-embed {
+        padding-left: 1%;
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (min-width : 1224px){
+    #twitch-embed {
+        padding-left: 17%;
+        padding-top: 14%;
+    }
+}
+
+
+@media only screen and (min-width : 1824px) {
+    #twitch-embed {
+        padding-left: 20%;
+        padding-top: 15%;
+    }
+}
